@@ -1,3 +1,6 @@
+# by lwc
+# 2016/11/14
+
 from sage.all import *
 
 def wiener(n, e):

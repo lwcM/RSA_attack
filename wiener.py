@@ -7,7 +7,6 @@ def wiener(n, e):
     """Wiener's attack"""
     n = Integer(n)
     e = Integer(e)
-    cf = (e / n).continued_fraction().convergents()
     for f in (e / n).continued_fraction().convergents()[1:]:
         k, d = f.numerator(), f.denominator()
         phi = ((e * d) - 1) / k
